@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="850" viewBox="0 0 1920 850">
+<defs>
+  <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0%" stop-color="#1abf99"/>
+    <stop offset="45%" stop-color="#9fe8f3"/>
+    <stop offset="100%" stop-color="#fff4d4"/>
+  </linearGradient>
+  <linearGradient id="sand" x1="0" x2="1">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#fef3cf" stop-opacity="0.92"/>
+  </linearGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<circle cx="1632.0" cy="153.0" r="68.0" fill="#ffffff" opacity="0.32"/>
+<circle cx="249.60000000000002" cy="187.0" r="42.5" fill="#ffffff" opacity="0.22"/>
+<path d="M0 612.0 C 345.59999999999997 561.0, 633.6 714.0, 960.0 654.5 S 1574.3999999999999 552.5, 1920 663.0 L 1920 850 L 0 850 Z" fill="url(#sand)"/>
+<path d="M0 663.0 C 326.40000000000003 612.0, 595.2 748.0, 960.0 705.5 S 1574.3999999999999 612.0, 1920 722.5 L 1920 850 L 0 850 Z" fill="#ffffff" opacity="0.95"/>
+<g opacity="0.85">
+<rect x="115.19999999999999" y="93.5" rx="30" ry="30" width="422.4" height="76.5" fill="#ffc637"/>
+<text x="326.40000000000003" y="144.5" font-family="Arial, Helvetica, sans-serif" font-size="34.0" font-weight="700" text-anchor="middle" fill="#ffffff">Oferta especial</text>
+</g>
+<text x="115.19999999999999" y="280.5" font-family="Arial, Helvetica, sans-serif" font-size="102.0" font-weight="900" fill="#083b61">Puerto Vallarta</text>
+<text x="115.19999999999999" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="42.5" font-weight="700" fill="#0c7288">Pacífico mexicano con escapadas premium</text>
+<text x="115.19999999999999" y="765.0" font-family="Arial, Helvetica, sans-serif" font-size="28.900000000000002" font-weight="700" fill="#0d5466">Reemplaza esta imagen en assets para poner tu foto real</text>
+</svg>

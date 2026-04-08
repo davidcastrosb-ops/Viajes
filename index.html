@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes Troncal</title>
+  <meta name="description" content="Landing editable para Viajes Troncal con destinos, WhatsApp y formulario conectable a Google Sheets.">
+  <link rel="icon" href="assets/images/ui/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-links">
+        <a id="socialFacebook" target="_blank" rel="noopener">Facebook</a>
+        <a id="socialInstagram" target="_blank" rel="noopener">Instagram</a>
+        <a id="socialTiktok" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <div class="topbar-contact">
+        <a id="waTop" target="_blank" rel="noopener">WhatsApp 3329335952</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <img src="assets/images/ui/logo.svg" alt="Viajes Troncal">
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="#destacados">Destinos</a>
+        <a href="#todos">Ofertas</a>
+        <a href="#regiones">Rutas</a>
+        <a href="#contacto">Cómo funciona</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-secondary" id="waMain" target="_blank" rel="noopener">Cotiza por WhatsApp</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-shell">
+      <div class="hero-visual">
+        <img id="heroBanner" class="hero-image" src="assets/images/banner/default-banner.svg" alt="Banner principal">
+        <div class="hero-overlay"></div>
+        <div class="hero-copy">
+          <div class="offer-badge">¡Oferta especial!</div>
+          <h1 class="hero-title" id="heroTitle">Tu próximo<br>viaje</h1>
+          <small class="hero-title" style="font-size:28px;color:#0b8da8;display:block;line-height:1.1;margin-top:0" id="heroSmall">Playa, pueblos mágicos, ciudad y más</small>
+          <div class="hero-price" id="heroPrice">Cotiza por WhatsApp y arma tu viaje ideal</div>
+          <div class="hero-meta" id="heroMeta">Hoteles, traslados, excursiones y escapadas</div>
+        </div>
+        <div class="wave-separator"></div>
+      </div>
+
+      <aside class="lead-card" id="contacto">
+        <div class="lead-head">
+          <h2>¡No está tu destino?<br>¡Solicita más información!</h2>
+          <p>Llena el formulario, guardamos el registro y además se abre WhatsApp con resumen automático.</p>
+        </div>
+        <form class="lead-body" id="leadForm">
+          <div class="field">
+            <label for="destinationSelect">Destino o ciudad que quieres</label>
+            <select id="destinationSelect" name="destination">
+              <option value="">Selecciona un destino o ciudad</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="customDestination">Si no aparece, escribe tu destino</label>
+            <input id="customDestination" name="customDestination" type="text" placeholder="Ej. Bacalar, Mérida, CDMX, etc.">
+          </div>
+
+          <div class="form-grid-2">
+            <div class="field">
+              <label for="adultsCount">Adultos</label>
+              <select id="adultsCount" name="adults">
+                <option value="">Selecciona</option>
+                <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="childrenCount">Niños</label>
+              <select id="childrenCount" name="children">
+                <option value="0" selected>0</option>
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="children-ages" id="childrenAges"></div>
+
+          <div class="field">
+            <label for="leadName">Nombre completo</label>
+            <input id="leadName" name="name" type="text" placeholder="Nombre completo" required>
+          </div>
+
+          <div class="field">
+            <label for="leadPhone">Teléfono</label>
+            <input id="leadPhone" name="phone" type="tel" placeholder="10 dígitos" required>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Quiero mis vacaciones</button>
+
+          <p class="form-note">El registro puede ir a Google Sheets y también te abrirá WhatsApp con el destino, adultos, niños y origen del clic.</p>
+
+          <div class="countdown" id="countdown"></div>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="destacados">
+    <div class="section-head">
+      <h2>¡Encuentra el destino perfecto para tus vacaciones soñadas!</h2>
+      <p>Destinos de playa, excursiones, pueblos mágicos y ciudades con fichas descargables.</p>
+    </div>
+    <div class="featured-grid" id="featuredGrid"></div>
+  </section>
+
+  <section class="section" id="todos">
+    <div class="section-head">
+      <h2>Todos los destinos individuales</h2>
+      <p>Cada tarjeta puede abrir galería, enviar a WhatsApp y mostrar su ficha.</p>
+    </div>
+    <div class="destinations-grid" id="destinationsGrid"></div>
+  </section>
+
+  <section class="section" id="regiones">
+    <div class="section-head">
+      <h2>Rutas por región</h2>
+      <p>Usa estas agrupaciones para vender mejor hoteles, escapadas y circuitos.</p>
+    </div>
+    <div class="regions-grid" id="regionsGrid"></div>
+  </section>
+
+  <section class="section">
+    <div class="yucatan-block">
+      <div class="text-card" id="yucatanCopy"></div>
+      <div class="sticky-note" id="agentTip"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2026 Viajes Troncal. Landing editable para GitHub + Vercel.</div>
+      <div class="footer-links">
+        <a href="#destacados">Destinos</a>
+        <a href="#todos">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" id="waFloat" target="_blank" rel="noopener">WhatsApp</a>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="modal-top">
+        <h3 id="modalTitle">Galería</h3>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a class="btn btn-primary" id="modalWhatsApp" target="_blank" rel="noopener">Cotizar</a>
+          <a class="btn btn-outline" id="modalFicha" target="_blank" rel="noopener">Ficha</a>
+          <button class="close-btn" id="modalClose" aria-label="Cerrar">×</button>
+        </div>
+      </div>
+      <div class="modal-main">
+        <img id="modalImage" src="" alt="">
+        <div class="modal-controls">
+          <button class="nav-btn" id="prevSlide">‹</button>
+          <button class="nav-btn" id="nextSlide">›</button>
+        </div>
+      </div>
+      <div class="modal-thumbs" id="modalThumbs"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
