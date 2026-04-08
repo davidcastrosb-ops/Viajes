@@ -1,478 +1,241 @@
 {
-  "site": {
-    "title": "Viajes Troncal",
+  "brand": {
+    "name": "Viajes Troncal",
+    "tagline": "Paquetes, escapadas y promociones por México",
+    "logo": "assets/images/logo/logo-viajes-troncal.svg"
+  },
+  "contact": {
     "whatsapp": "523329335952",
-    "whatsappDisplay": "3329335952",
-    "sheetsEndpoint": "PEGA_AQUI_TU_WEBAPP_DE_GOOGLE_APPS_SCRIPT",
-    "defaultBanner": "assets/images/banner/default-banner.svg",
-    "social": {
-      "facebook": "https://www.facebook.com/",
-      "instagram": "https://www.instagram.com/",
-      "tiktok": "https://www.tiktok.com/"
-    },
-    "colors": {
-      "primary": "#00b7d6",
-      "secondary": "#ff7a00",
-      "accent": "#24b679",
-      "text": "#143544",
-      "bg": "#f6fbfd",
-      "card": "#ffffff"
-    }
+    "phoneDisplay": "33 2933 5952",
+    "email": "hola@viajestroncal.com",
+    "sheetsEndpoint": "PEGA_AQUI_TU_URL_DE_GOOGLE_APPS_SCRIPT"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "tiktok": "https://www.tiktok.com/"
+  },
+  "theme": {
+    "primary": "#18c7ca",
+    "secondary": "#f4b24d",
+    "dark": "#14333b",
+    "lightBg": "#f7fcfc"
+  },
+  "heroDefault": {
+    "title": "Viajes por México para disfrutar, descansar y vivir experiencias inolvidables",
+    "subtitle": "Cotiza promociones, escapadas románticas, viajes familiares y destinos de playa de forma rápida por WhatsApp.",
+    "image": "assets/images/banner/banner-principal.svg"
   },
   "destinations": [
     {
-      "id": "cancun",
+      "slug": "cancun",
       "name": "Cancún",
-      "region": "El Caribe Mexicano",
-      "subtitle": "Playas turquesa y resorts todo incluido",
-      "summary": "Ideal para playa, luna de miel, familia y escapadas todo incluido.",
-      "heroOffer": "Todo incluido desde $7,990 por persona",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#00b7d6",
-      "keywords": [
-        "Cancún",
-        "El Caribe Mexicano",
-        "Cancún",
-        "Playa del Carmen",
-        "Tulum",
-        "Cozumel"
+      "region": "Caribe Mexicano",
+      "category": "playa",
+      "summary": "Playas turquesa, hoteles todo incluido y ambiente vibrante.",
+      "images": [
+        "assets/images/destinos/cancun/1.svg",
+        "assets/images/destinos/cancun/2.svg",
+        "assets/images/destinos/cancun/3.svg",
+        "assets/images/destinos/cancun/4.svg"
       ],
-      "bannerImage": "assets/images/banner/cancun.svg",
-      "coverImage": "assets/images/destinos/cancun/cover.svg",
-      "gallery": [
-        "assets/images/destinos/cancun/g1.svg",
-        "assets/images/destinos/cancun/g2.svg",
-        "assets/images/destinos/cancun/g3.svg",
-        "assets/images/destinos/cancun/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Cancún y Caribe Mexicano",
-      "sheetTag": "Cancún",
-      "fichaFile": "fichas/cancun.html"
+      "sheetLabel": "Cancún"
     },
     {
-      "id": "playa-del-carmen",
+      "slug": "playa-del-carmen",
       "name": "Playa del Carmen",
-      "region": "El Caribe Mexicano",
-      "subtitle": "Beach clubs, compras y conexión a tours",
-      "summary": "Buen equilibrio entre playa, vida nocturna, shopping y excursiones.",
-      "heroOffer": "Escapada caribeña con hotel + traslado",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#11b4d8",
-      "keywords": [
-        "Playa del Carmen",
-        "El Caribe Mexicano",
-        "Cancún",
-        "Playa del Carmen",
-        "Tulum",
-        "Cozumel"
+      "region": "Caribe Mexicano",
+      "category": "playa",
+      "summary": "Arena blanca, quinta avenida y escapadas con mucho ambiente.",
+      "images": [
+        "assets/images/destinos/playa-del-carmen/1.svg",
+        "assets/images/destinos/playa-del-carmen/2.svg",
+        "assets/images/destinos/playa-del-carmen/3.svg",
+        "assets/images/destinos/playa-del-carmen/4.svg"
       ],
-      "bannerImage": "assets/images/banner/playa-del-carmen.svg",
-      "coverImage": "assets/images/destinos/playa-del-carmen/cover.svg",
-      "gallery": [
-        "assets/images/destinos/playa-del-carmen/g1.svg",
-        "assets/images/destinos/playa-del-carmen/g2.svg",
-        "assets/images/destinos/playa-del-carmen/g3.svg",
-        "assets/images/destinos/playa-del-carmen/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Playa del Carmen",
-      "sheetTag": "Playa del Carmen",
-      "fichaFile": "fichas/playa-del-carmen.html"
+      "sheetLabel": "Playa del Carmen"
     },
     {
-      "id": "tulum",
+      "slug": "tulum",
       "name": "Tulum",
-      "region": "El Caribe Mexicano",
-      "subtitle": "Eco chic, ruinas mayas y mar caribe",
-      "summary": "Perfecto para parejas, wellness y experiencias instagrameables.",
-      "heroOffer": "Experiencias boutique y beach vibes",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#12b8be",
-      "keywords": [
-        "Tulum",
-        "El Caribe Mexicano",
-        "Cancún",
-        "Playa del Carmen",
-        "Tulum",
-        "Cozumel"
+      "region": "Caribe Mexicano",
+      "category": "playa",
+      "summary": "Ruinas, beach clubs y una vibra relajada eco-chic.",
+      "images": [
+        "assets/images/destinos/tulum/1.svg",
+        "assets/images/destinos/tulum/2.svg",
+        "assets/images/destinos/tulum/3.svg",
+        "assets/images/destinos/tulum/4.svg"
       ],
-      "bannerImage": "assets/images/banner/tulum.svg",
-      "coverImage": "assets/images/destinos/tulum/cover.svg",
-      "gallery": [
-        "assets/images/destinos/tulum/g1.svg",
-        "assets/images/destinos/tulum/g2.svg",
-        "assets/images/destinos/tulum/g3.svg",
-        "assets/images/destinos/tulum/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Tulum",
-      "sheetTag": "Tulum",
-      "fichaFile": "fichas/tulum.html"
+      "sheetLabel": "Tulum"
     },
     {
-      "id": "cozumel",
+      "slug": "cozumel",
       "name": "Cozumel",
-      "region": "El Caribe Mexicano",
-      "subtitle": "Isla, snorkel y buceo",
-      "summary": "Excelente para viajeros que aman el mar, snorkel y tranquilidad isleña.",
-      "heroOffer": "Mar cristalino y aventuras acuáticas",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#0ea8cf",
-      "keywords": [
-        "Cozumel",
-        "El Caribe Mexicano",
-        "Cancún",
-        "Playa del Carmen",
-        "Tulum",
-        "Cozumel"
+      "region": "Caribe Mexicano",
+      "category": "playa",
+      "summary": "Mar cristalino, buceo y paseos ideales para desconectarte.",
+      "images": [
+        "assets/images/destinos/cozumel/1.svg",
+        "assets/images/destinos/cozumel/2.svg",
+        "assets/images/destinos/cozumel/3.svg",
+        "assets/images/destinos/cozumel/4.svg"
       ],
-      "bannerImage": "assets/images/banner/cozumel.svg",
-      "coverImage": "assets/images/destinos/cozumel/cover.svg",
-      "gallery": [
-        "assets/images/destinos/cozumel/g1.svg",
-        "assets/images/destinos/cozumel/g2.svg",
-        "assets/images/destinos/cozumel/g3.svg",
-        "assets/images/destinos/cozumel/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Cozumel",
-      "sheetTag": "Cozumel",
-      "fichaFile": "fichas/cozumel.html"
+      "sheetLabel": "Cozumel"
     },
     {
-      "id": "puerto-vallarta",
+      "slug": "puerto-vallarta",
       "name": "Puerto Vallarta",
-      "region": "El Pacífico Dorado",
-      "subtitle": "Malecón, atardeceres y sabor mexicano",
-      "summary": "Muy buscado por parejas, familias y viajeros desde Guadalajara.",
-      "heroOffer": "Pacífico mexicano con escapadas premium",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#1abf99",
-      "keywords": [
-        "Puerto Vallarta",
-        "El Pacífico Dorado",
-        "Puerto Vallarta",
-        "Nuevo Nayarit"
+      "region": "Pacífico Dorado",
+      "category": "playa",
+      "summary": "Malecón, atardeceres y hoteles para parejas o familias.",
+      "images": [
+        "assets/images/destinos/puerto-vallarta/1.svg",
+        "assets/images/destinos/puerto-vallarta/2.svg",
+        "assets/images/destinos/puerto-vallarta/3.svg",
+        "assets/images/destinos/puerto-vallarta/4.svg"
       ],
-      "bannerImage": "assets/images/banner/puerto-vallarta.svg",
-      "coverImage": "assets/images/destinos/puerto-vallarta/cover.svg",
-      "gallery": [
-        "assets/images/destinos/puerto-vallarta/g1.svg",
-        "assets/images/destinos/puerto-vallarta/g2.svg",
-        "assets/images/destinos/puerto-vallarta/g3.svg",
-        "assets/images/destinos/puerto-vallarta/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Puerto Vallarta",
-      "sheetTag": "Puerto Vallarta",
-      "fichaFile": "fichas/puerto-vallarta.html"
+      "sheetLabel": "Puerto Vallarta"
     },
     {
-      "id": "nuevo-nayarit",
+      "slug": "nuevo-nayarit",
       "name": "Nuevo Nayarit",
-      "region": "El Pacífico Dorado",
-      "subtitle": "Playa, marinas y resorts familiares",
-      "summary": "Ideal para familia, grupos y quienes buscan comodidad de resort.",
-      "heroOffer": "Resorts y descanso frente al mar",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#25c29f",
-      "keywords": [
-        "Nuevo Nayarit",
-        "El Pacífico Dorado",
-        "Puerto Vallarta",
-        "Nuevo Nayarit"
+      "region": "Pacífico Dorado",
+      "category": "playa",
+      "summary": "Resorts, mar tranquilo y experiencias premium frente a la playa.",
+      "images": [
+        "assets/images/destinos/nuevo-nayarit/1.svg",
+        "assets/images/destinos/nuevo-nayarit/2.svg",
+        "assets/images/destinos/nuevo-nayarit/3.svg",
+        "assets/images/destinos/nuevo-nayarit/4.svg"
       ],
-      "bannerImage": "assets/images/banner/nuevo-nayarit.svg",
-      "coverImage": "assets/images/destinos/nuevo-nayarit/cover.svg",
-      "gallery": [
-        "assets/images/destinos/nuevo-nayarit/g1.svg",
-        "assets/images/destinos/nuevo-nayarit/g2.svg",
-        "assets/images/destinos/nuevo-nayarit/g3.svg",
-        "assets/images/destinos/nuevo-nayarit/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Nuevo Nayarit",
-      "sheetTag": "Nuevo Nayarit",
-      "fichaFile": "fichas/nuevo-nayarit.html"
+      "sheetLabel": "Nuevo Nayarit"
     },
     {
-      "id": "huatulco",
+      "slug": "huatulco",
       "name": "Huatulco",
-      "region": "El Pacífico Sur",
-      "subtitle": "Bahías, mar tranquilo y descanso",
-      "summary": "Buen destino para playa, descanso y paisajes con ambiente relajado.",
-      "heroOffer": "Bahías hermosas y hoteles frente al mar",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#1eb3a0",
-      "keywords": [
-        "Huatulco",
-        "El Pacífico Sur",
-        "Huatulco",
-        "Puerto Escondido"
+      "region": "Pacífico Sur",
+      "category": "playa",
+      "summary": "Bahías hermosas, aguas limpias y un viaje para relajarte de verdad.",
+      "images": [
+        "assets/images/destinos/huatulco/1.svg",
+        "assets/images/destinos/huatulco/2.svg",
+        "assets/images/destinos/huatulco/3.svg",
+        "assets/images/destinos/huatulco/4.svg"
       ],
-      "bannerImage": "assets/images/banner/huatulco.svg",
-      "coverImage": "assets/images/destinos/huatulco/cover.svg",
-      "gallery": [
-        "assets/images/destinos/huatulco/g1.svg",
-        "assets/images/destinos/huatulco/g2.svg",
-        "assets/images/destinos/huatulco/g3.svg",
-        "assets/images/destinos/huatulco/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Huatulco",
-      "sheetTag": "Huatulco",
-      "fichaFile": "fichas/huatulco.html"
+      "sheetLabel": "Huatulco"
     },
     {
-      "id": "puerto-escondido",
+      "slug": "puerto-escondido",
       "name": "Puerto Escondido",
-      "region": "El Pacífico Sur",
-      "subtitle": "Surf, juventud y vibra libre",
-      "summary": "Muy atractivo para jóvenes, surfistas y viajes más casuales.",
-      "heroOffer": "Aventura, surf y beach vibes",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#19b0a7",
-      "keywords": [
-        "Puerto Escondido",
-        "El Pacífico Sur",
-        "Huatulco",
-        "Puerto Escondido"
+      "region": "Pacífico Sur",
+      "category": "aventura",
+      "summary": "Surf, ambiente joven y playas para aventura o descanso.",
+      "images": [
+        "assets/images/destinos/puerto-escondido/1.svg",
+        "assets/images/destinos/puerto-escondido/2.svg",
+        "assets/images/destinos/puerto-escondido/3.svg",
+        "assets/images/destinos/puerto-escondido/4.svg"
       ],
-      "bannerImage": "assets/images/banner/puerto-escondido.svg",
-      "coverImage": "assets/images/destinos/puerto-escondido/cover.svg",
-      "gallery": [
-        "assets/images/destinos/puerto-escondido/g1.svg",
-        "assets/images/destinos/puerto-escondido/g2.svg",
-        "assets/images/destinos/puerto-escondido/g3.svg",
-        "assets/images/destinos/puerto-escondido/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Puerto Escondido",
-      "sheetTag": "Puerto Escondido",
-      "fichaFile": "fichas/puerto-escondido.html"
+      "sheetLabel": "Puerto Escondido"
     },
     {
-      "id": "los-cabos",
+      "slug": "los-cabos",
       "name": "Los Cabos",
       "region": "Baja California Sur",
-      "subtitle": "Lujo, paisajes icónicos y mar",
-      "summary": "Top para lujo, experiencias exclusivas y escapadas memorables.",
-      "heroOffer": "Destino premium de lujo y experiencias",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#2db1e8",
-      "keywords": [
-        "Los Cabos",
-        "Baja California Sur",
-        "Los Cabos",
-        "Cabo San Lucas",
-        "La Paz",
-        "Loreto"
+      "category": "lujo",
+      "summary": "Escapadas premium, paisaje único y hoteles de gran nivel.",
+      "images": [
+        "assets/images/destinos/los-cabos/1.svg",
+        "assets/images/destinos/los-cabos/2.svg",
+        "assets/images/destinos/los-cabos/3.svg",
+        "assets/images/destinos/los-cabos/4.svg"
       ],
-      "bannerImage": "assets/images/banner/los-cabos.svg",
-      "coverImage": "assets/images/destinos/los-cabos/cover.svg",
-      "gallery": [
-        "assets/images/destinos/los-cabos/g1.svg",
-        "assets/images/destinos/los-cabos/g2.svg",
-        "assets/images/destinos/los-cabos/g3.svg",
-        "assets/images/destinos/los-cabos/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Los Cabos",
-      "sheetTag": "Los Cabos",
-      "fichaFile": "fichas/los-cabos.html"
+      "sheetLabel": "Los Cabos"
     },
     {
-      "id": "cabo-san-lucas",
-      "name": "Cabo San Lucas",
-      "region": "Baja California Sur",
-      "subtitle": "Arco, marina y nightlife",
-      "summary": "Perfecto para viajeros que quieren mezcla de fiesta, mar y experiencias premium.",
-      "heroOffer": "Mar, lujo y vida nocturna",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#32aee8",
-      "keywords": [
-        "Cabo San Lucas",
-        "Baja California Sur",
-        "Los Cabos",
-        "Cabo San Lucas",
-        "La Paz",
-        "Loreto"
-      ],
-      "bannerImage": "assets/images/banner/cabo-san-lucas.svg",
-      "coverImage": "assets/images/destinos/cabo-san-lucas/cover.svg",
-      "gallery": [
-        "assets/images/destinos/cabo-san-lucas/g1.svg",
-        "assets/images/destinos/cabo-san-lucas/g2.svg",
-        "assets/images/destinos/cabo-san-lucas/g3.svg",
-        "assets/images/destinos/cabo-san-lucas/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Cabo San Lucas",
-      "sheetTag": "Cabo San Lucas",
-      "fichaFile": "fichas/cabo-san-lucas.html"
-    },
-    {
-      "id": "la-paz",
+      "slug": "la-paz",
       "name": "La Paz",
       "region": "Baja California Sur",
-      "subtitle": "Playas claras y relax total",
-      "summary": "Excelente para quienes buscan playa calmada y ambiente relajado.",
-      "heroOffer": "Escapada tranquila y paisajes increíbles",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#36a7e3",
-      "keywords": [
-        "La Paz",
-        "Baja California Sur",
-        "Los Cabos",
-        "Cabo San Lucas",
-        "La Paz",
-        "Loreto"
+      "category": "playa",
+      "summary": "Mar sereno, vistas increíbles y experiencias memorables.",
+      "images": [
+        "assets/images/destinos/la-paz/1.svg",
+        "assets/images/destinos/la-paz/2.svg",
+        "assets/images/destinos/la-paz/3.svg",
+        "assets/images/destinos/la-paz/4.svg"
       ],
-      "bannerImage": "assets/images/banner/la-paz.svg",
-      "coverImage": "assets/images/destinos/la-paz/cover.svg",
-      "gallery": [
-        "assets/images/destinos/la-paz/g1.svg",
-        "assets/images/destinos/la-paz/g2.svg",
-        "assets/images/destinos/la-paz/g3.svg",
-        "assets/images/destinos/la-paz/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar La Paz",
-      "sheetTag": "La Paz",
-      "fichaFile": "fichas/la-paz.html"
+      "sheetLabel": "La Paz"
     },
     {
-      "id": "loreto",
+      "slug": "loreto",
       "name": "Loreto",
       "region": "Baja California Sur",
-      "subtitle": "Mar de Cortés y encanto sereno",
-      "summary": "Ideal para desconectarse y disfrutar mar, historia y tranquilidad.",
-      "heroOffer": "Naturaleza, calma y experiencias auténticas",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#4da9dd",
-      "keywords": [
-        "Loreto",
-        "Baja California Sur",
-        "Los Cabos",
-        "Cabo San Lucas",
-        "La Paz",
-        "Loreto"
+      "category": "descanso",
+      "summary": "Historia, mar y una sensación de paz total.",
+      "images": [
+        "assets/images/destinos/loreto/1.svg",
+        "assets/images/destinos/loreto/2.svg",
+        "assets/images/destinos/loreto/3.svg",
+        "assets/images/destinos/loreto/4.svg"
       ],
-      "bannerImage": "assets/images/banner/loreto.svg",
-      "coverImage": "assets/images/destinos/loreto/cover.svg",
-      "gallery": [
-        "assets/images/destinos/loreto/g1.svg",
-        "assets/images/destinos/loreto/g2.svg",
-        "assets/images/destinos/loreto/g3.svg",
-        "assets/images/destinos/loreto/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Loreto",
-      "sheetTag": "Loreto",
-      "fichaFile": "fichas/loreto.html"
+      "sheetLabel": "Loreto"
     },
     {
-      "id": "acapulco",
+      "slug": "acapulco",
       "name": "Acapulco",
       "region": "Tradicionales",
-      "subtitle": "Clásico de playa con mucha historia",
-      "summary": "Un clásico mexicano para playa, familia y escapadas rápidas.",
-      "heroOffer": "Escapadas tradicionales al Pacífico",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#febc2c",
-      "keywords": [
-        "Acapulco",
-        "Tradicionales",
-        "Acapulco",
-        "Mazatlán",
-        "Ixtapa Zihuatanejo"
+      "category": "playa",
+      "summary": "Un clásico para escaparte con gran energía y buena comida.",
+      "images": [
+        "assets/images/destinos/acapulco/1.svg",
+        "assets/images/destinos/acapulco/2.svg",
+        "assets/images/destinos/acapulco/3.svg",
+        "assets/images/destinos/acapulco/4.svg"
       ],
-      "bannerImage": "assets/images/banner/acapulco.svg",
-      "coverImage": "assets/images/destinos/acapulco/cover.svg",
-      "gallery": [
-        "assets/images/destinos/acapulco/g1.svg",
-        "assets/images/destinos/acapulco/g2.svg",
-        "assets/images/destinos/acapulco/g3.svg",
-        "assets/images/destinos/acapulco/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Acapulco",
-      "sheetTag": "Acapulco",
-      "fichaFile": "fichas/acapulco.html"
+      "sheetLabel": "Acapulco"
     },
     {
-      "id": "mazatlan",
+      "slug": "mazatlan",
       "name": "Mazatlán",
       "region": "Tradicionales",
-      "subtitle": "Malecón, playa y gastronomía",
-      "summary": "Mezcla de playa, vida urbana y buena comida.",
-      "heroOffer": "Mar, ciudad y ambiente alegre",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#f8b13d",
-      "keywords": [
-        "Mazatlán",
-        "Tradicionales",
-        "Acapulco",
-        "Mazatlán",
-        "Ixtapa Zihuatanejo"
+      "category": "playa",
+      "summary": "Malecón, mar y excelente ambiente para toda la familia.",
+      "images": [
+        "assets/images/destinos/mazatlan/1.svg",
+        "assets/images/destinos/mazatlan/2.svg",
+        "assets/images/destinos/mazatlan/3.svg",
+        "assets/images/destinos/mazatlan/4.svg"
       ],
-      "bannerImage": "assets/images/banner/mazatlan.svg",
-      "coverImage": "assets/images/destinos/mazatlan/cover.svg",
-      "gallery": [
-        "assets/images/destinos/mazatlan/g1.svg",
-        "assets/images/destinos/mazatlan/g2.svg",
-        "assets/images/destinos/mazatlan/g3.svg",
-        "assets/images/destinos/mazatlan/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Mazatlán",
-      "sheetTag": "Mazatlán",
-      "fichaFile": "fichas/mazatlan.html"
+      "sheetLabel": "Mazatlán"
     },
     {
-      "id": "ixtapa-zihuatanejo",
+      "slug": "ixtapa-zihuatanejo",
       "name": "Ixtapa Zihuatanejo",
       "region": "Tradicionales",
-      "subtitle": "Relax, playa y encanto del Pacífico",
-      "summary": "Muy buena opción para parejas, descanso y vacaciones tranquilas.",
-      "heroOffer": "Pacífico relajado con buena hotelería",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#f1b23a",
-      "keywords": [
-        "Ixtapa Zihuatanejo",
-        "Tradicionales",
-        "Acapulco",
-        "Mazatlán",
-        "Ixtapa Zihuatanejo"
+      "category": "playa",
+      "summary": "Dos estilos en un solo viaje: descanso y ambiente costero.",
+      "images": [
+        "assets/images/destinos/ixtapa-zihuatanejo/1.svg",
+        "assets/images/destinos/ixtapa-zihuatanejo/2.svg",
+        "assets/images/destinos/ixtapa-zihuatanejo/3.svg",
+        "assets/images/destinos/ixtapa-zihuatanejo/4.svg"
       ],
-      "bannerImage": "assets/images/banner/ixtapa-zihuatanejo.svg",
-      "coverImage": "assets/images/destinos/ixtapa-zihuatanejo/cover.svg",
-      "gallery": [
-        "assets/images/destinos/ixtapa-zihuatanejo/g1.svg",
-        "assets/images/destinos/ixtapa-zihuatanejo/g2.svg",
-        "assets/images/destinos/ixtapa-zihuatanejo/g3.svg",
-        "assets/images/destinos/ixtapa-zihuatanejo/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Ixtapa Zihuatanejo",
-      "sheetTag": "Ixtapa Zihuatanejo",
-      "fichaFile": "fichas/ixtapa-zihuatanejo.html"
+      "sheetLabel": "Ixtapa Zihuatanejo"
     },
     {
-      "id": "pueblos-magicos-jalisco",
+      "slug": "pueblos-magicos-jalisco",
       "name": "Pueblos Mágicos de Jalisco",
-      "region": "Pueblos Mágicos",
-      "subtitle": "Tequila, Mazamitla, Tapalpa y más",
-      "summary": "Perfecto para rutas cortas, romance, bosque, pueblo y tradición.",
-      "heroOffer": "Escapadas de fin de semana con muchísimo encanto",
-      "heroNights": "4 días / 3 noches · sujeto a disponibilidad",
-      "accent": "#24b679",
-      "keywords": [
-        "Pueblos Mágicos de Jalisco",
-        "Pueblos Mágicos",
-        "Tequila",
-        "Mazamitla",
-        "Tapalpa",
-        "Ajijic",
-        "Lagos de Moreno"
+      "region": "Occidente",
+      "category": "pueblo-magico",
+      "summary": "Escápate a rincones llenos de tradición, naturaleza y encanto.",
+      "images": [
+        "assets/images/destinos/pueblos-magicos-jalisco/1.svg",
+        "assets/images/destinos/pueblos-magicos-jalisco/2.svg",
+        "assets/images/destinos/pueblos-magicos-jalisco/3.svg",
+        "assets/images/destinos/pueblos-magicos-jalisco/4.svg"
       ],
-      "bannerImage": "assets/images/banner/pueblos-magicos-jalisco.svg",
-      "coverImage": "assets/images/destinos/pueblos-magicos-jalisco/cover.svg",
-      "gallery": [
-        "assets/images/destinos/pueblos-magicos-jalisco/g1.svg",
-        "assets/images/destinos/pueblos-magicos-jalisco/g2.svg",
-        "assets/images/destinos/pueblos-magicos-jalisco/g3.svg",
-        "assets/images/destinos/pueblos-magicos-jalisco/g4.svg"
-      ],
-      "whatsappLabel": "Cotizar Pueblos Mágicos de Jalisco",
-      "sheetTag": "Pueblos Mágicos de Jalisco",
-      "fichaFile": "fichas/pueblos-magicos-jalisco.html"
+      "sheetLabel": "Pueblos Mágicos de Jalisco"
     }
   ]
 }

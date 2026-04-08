@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64">
-<defs><linearGradient id="a" x1="0" x2="1"><stop offset="0%" stop-color="#00b7d6"/><stop offset="100%" stop-color="#24b679"/></linearGradient></defs>
-<rect width="48" height="48" x="0" y="8" rx="16" fill="url(#a)"/>
-<path d="M14 31c10-6 14-7 20-8-3 3-5 6-7 11-4-3-7-3-13-3z" fill="#fff"/>
-<text x="58" y="39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#f59a18">Viajes</text>
-<text x="122" y="39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#1aa8c7">Troncal</text>
-</svg>
