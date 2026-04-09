@@ -1,7 +1,7 @@
 
 VIAJES TRONCAL - PROYECTO COMPLETO
 
-ESTE PROYECTO YA VIENE LISTO PARA:
+ESTE PROYECTO YA VIENE LISTO PARA:.
 - Subir a GitHub
 - Publicar en Vercel
 - Mostrar promociones automáticas pegando solo links
